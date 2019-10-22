@@ -73,7 +73,7 @@ describe("basics", function() {
             // new Number() creates a "primitive wrapper". It's not an actual number, it's an object.
             // In 99.999% of all cases, this is a bug and not actually intended. Fix it! :)
             // ✏️ FIX THAT BUG ✏️
-            const someNumber = new Number(3);
+            const someNumber =Number(3);
             ////////////////////////////////////////////////////////////////////
 
             // The primitive wrapper passes the loose quality check because it will be casted to a number.
@@ -91,7 +91,7 @@ describe("basics", function() {
             // write all the zeros.
             // Write it as a string so that the .length property can be checked.
             // ✏️ EDIT NEXT LINE ✏️
-            const bigNumber = "...";
+            const bigNumber = "1e9";
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof bigNumber).to.equal("string");
