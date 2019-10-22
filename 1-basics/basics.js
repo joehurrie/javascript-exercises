@@ -121,11 +121,11 @@ describe("basics", function() {
     describe("Leading zeros can also be omitted", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
-            // We're searching for a floating point number
+            // We're searching for a floating point numbero
             // written in way that we don't have to write all the zeros BEFORE the point.
             // Write it as a string so that the .length property can be checked.
             // ✏️ EDIT NEXT LINE ✏️
-            const someNumber = "...";
+            const someNumber = ".2";
             ////////////////////////////////////////////////////////////////////
 
             expect(typeof someNumber).to.equal("string");
@@ -138,7 +138,9 @@ describe("basics", function() {
         it("should run without errors", function() {
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-
+            const object={
+                someProperty:1
+            }
             ////////////////////////////////////////////////////////////////////
 
             expect(object instanceof Object).to.equal(true);
